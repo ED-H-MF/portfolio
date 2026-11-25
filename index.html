@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>方天兵 · 作品集 2026</title>
+<meta name="description" content="方天兵 数字媒体艺术设计 作品集：会展视觉、文化短片、产品广告与三维动态">
+<style>
+  :root{
+    --bg:#0b0b0d; --fg:#f2f2f4; --mute:#8a8a93; --gold:#c9a227; --line:#232327;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg); color:var(--fg);
+    font-family:"MiSans","Microsoft YaHei","PingFang SC",system-ui,-apple-system,sans-serif;
+    -webkit-font-smoothing:antialiased; line-height:1.6;
+  }
+
+  /* 顶部信息条 */
+  header{
+    position:sticky; top:0; z-index:50;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 24px;
+    background:rgba(11,11,13,.88);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);
+  }
+  .brand{display:flex; align-items:baseline; gap:12px; min-width:0}
+  .brand b{font-size:16px; letter-spacing:2px; font-weight:700}
+  .brand span{font-size:11.5px; color:var(--mute); letter-spacing:1px; white-space:nowrap}
+  .nav{display:flex; gap:18px; font-size:12px}
+  .nav a{color:var(--mute); text-decoration:none; letter-spacing:.5px; transition:color .2s}
+  .nav a:hover{color:var(--gold)}
+
+  /* 封面 */
+  .cover{padding:72px 24px 56px; max-width:1180px; margin:0 auto; border-left:2px solid var(--gold); padding-left:32px}
+  .cover .en{font-size:11px; letter-spacing:6px; color:var(--gold); margin-bottom:14px}
+  .cover h1{font-size:clamp(38px,7vw,68px); letter-spacing:6px; line-height:1.1; font-weight:700}
+  .cover .sub{color:var(--mute); font-size:13px; margin-top:14px; letter-spacing:1px}
+  .cover .roles{margin-top:22px; color:var(--gold); font-size:14px; letter-spacing:2px; font-weight:600}
+  .cover .note{margin-top:28px; color:var(--mute); font-size:12.5px}
+
+  /* 目录 */
+  .toc{max-width:1180px; margin:0 auto; padding:20px 24px 40px}
+  .toc h2{font-size:13px; letter-spacing:3px; color:var(--mute); font-weight:600; margin-bottom:22px}
+  .toc ol{list-style:none; counter-reset:i}
+  .toc li{
+    counter-increment:i; display:grid; grid-template-columns:44px 1fr auto; gap:16px;
+    align-items:baseline; padding:16px 0; border-bottom:1px solid var(--line);
+  }
+  .toc li::before{
+    content:counter(i,decimal-leading-zero); color:var(--gold);
+    font-size:15px; font-weight:700; letter-spacing:1px;
+  }
+  .toc .t{font-size:15px; font-weight:600}
+  .toc .d{display:block; color:var(--mute); font-size:12px; margin-top:4px; font-weight:400}
+  .toc .p{color:var(--mute); font-size:12px}
+
+  /* 页面 */
+  .sheet{max-width:1180px; margin:0 auto 26px; padding:0 24px}
+  .sheet figure{position:relative; background:#141417; border:1px solid var(--line); border-radius:4px; overflow:hidden}
+  .sheet img{display:block; width:100%; height:auto}
+  .sheet figcaption{
+    display:flex; justify-content:space-between; align-items:center;
+    padding:11px 14px; font-size:12px; color:var(--mute); border-top:1px solid var(--line);
+  }
+  .sheet .pg{color:var(--gold); font-weight:600; letter-spacing:1px}
+
+  /* 底部 */
+  footer{max-width:1180px; margin:40px auto 0; padding:36px 24px 60px; border-top:1px solid var(--line)}
+  .ct{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:18px}
+  .ct div span{display:block; color:var(--mute); font-size:11px; letter-spacing:2px; margin-bottom:6px}
+  .ct div b{font-size:14px; font-weight:500; letter-spacing:.5px}
+  .ct a{color:var(--fg); text-decoration:none; border-bottom:1px solid var(--line)}
+  .ct a:hover{color:var(--gold); border-color:var(--gold)}
+  .end{margin-top:34px; color:var(--mute); font-size:11.5px; letter-spacing:1px}
+
+  @media (max-width:640px){
+    header{padding:12px 16px}
+    .brand b{font-size:14px} .brand span{display:none}
+    .nav{gap:12px; font-size:11px}
+    .cover{padding:44px 16px 36px 22px}
+    .toc,.sheet,footer{padding-left:16px; padding-right:16px}
+    .toc li{grid-template-columns:34px 1fr auto; gap:10px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <b>方天兵</b>
+    <span>数字媒体艺术设计 · 2027 届</span>
+  </div>
+  <nav class="nav">
+    <a href="#toc">目录</a>
+    <a href="#p03">会展视觉</a>
+    <a href="#p05">文化短片</a>
+    <a href="#p07">产品广告</a>
+    <a href="#p08">三维动态</a>
+    <a href="#contact">联系</a>
+  </nav>
+</header>
+
+<section class="cover">
+  <div class="en">P O R T F O L I O &nbsp; 2 0 2 6</div>
+  <h1>方天兵</h1>
+  <div class="sub">数字媒体艺术设计 · 浙江商业职业技术学院 · 2027 届</div>
+  <div class="roles">新媒体运营 &nbsp;/&nbsp; 短视频剪辑 &nbsp;/&nbsp; 视觉设计</div>
+  <div class="note">本册收录 2025—2026 学年课程作品、竞赛作品与个人练习。</div>
+</section>
+
+<section class="toc" id="toc">
+  <h2>作 品 目 录</h2>
+  <ol>
+    <li>
+      <div>
+        <span class="t">会展创意策划 · 主视觉</span>
+        <span class="d">浙江省第十六届会展创意策划大赛 · 两张主题海报与 IP 形象</span>
+      </div>
+      <span class="p">03</span>
+    </li>
+    <li>
+      <div>
+        <span class="t">《宋韵》文化短片</span>
+        <span class="d">2 分 32 秒 · AI 生图 + 实拍素材 · 剪辑 / 调色 / 字幕包装</span>
+      </div>
+      <span class="p">05</span>
+    </li>
+    <li>
+      <div>
+        <span class="t">《雪丰》15 秒产品广告</span>
+        <span class="d">产品广告 · 分镜 / 剪辑 / 调色 · 24 fps</span>
+      </div>
+      <span class="p">07</span>
+    </li>
+    <li>
+      <div>
+        <span class="t">动态视觉与三维</span>
+        <span class="d">After Effects 片头 · Blender 建模与 AI 风格迭代</span>
+      </div>
+      <span class="p">08</span>
+    </li>
+  </ol>
+</section>
+
+<div class="sheet" id="p03">
+  <figure><img src="img/p03.jpg" alt="会展创意策划 主视觉" loading="lazy">
+    <figcaption><span>01 会展创意策划 · 主视觉</span><span class="pg">03</span></figcaption></figure>
+</div>
+
+<div class="sheet" id="p04">
+  <figure><img src="img/p04.jpg" alt="梨花武林 江湖春会" loading="lazy">
+    <figcaption><span>01 梨花武林 · 江湖春会</span><span class="pg">04</span></figcaption></figure>
+</div>
+
+<div class="sheet" id="p05">
+  <figure><img src="img/p05.jpg" alt="宋韵文化短片" loading="lazy">
+    <figcaption><span>02 《宋韵》文化短片</span><span class="pg">05</span></figcaption></figure>
+</div>
+
+<div class="sheet" id="p06">
+  <figure><img src="img/p06.jpg" alt="宋韵转场与章节" loading="lazy">
+    <figcaption><span>02 《宋韵》· 转场与章节</span><span class="pg">06</span></figcaption></figure>
+</div>
+
+<div class="sheet" id="p07">
+  <figure><img src="img/p07.jpg" alt="雪丰产品广告" loading="lazy">
+    <figcaption><span>03 《雪丰》15 秒产品广告</span><span class="pg">07</span></figcaption></figure>
+</div>
+
+<div class="sheet" id="p08">
+  <figure><img src="img/p08.jpg" alt="动态视觉与三维" loading="lazy">
+    <figcaption><span>04 动态视觉与三维</span><span class="pg">08</span></figcaption></figure>
+</div>
+
+<div class="sheet" id="p09">
+  <figure><img src="img/p09.jpg" alt="封底" loading="lazy">
+    <figcaption><span>封底</span><span class="pg">09</span></figcaption></figure>
+</div>
+
+<footer id="contact">
+  <div class="ct">
+    <div><span>电 话</span><b>19730501932</b></div>
+    <div><span>邮 箱</span><b><a href="mailto:ai.soul@qq.com">ai.soul@qq.com</a></b></div>
+    <div><span>现 居</span><b>杭州 · 滨江</b></div>
+    <div><span>求 职</span><b>新媒体运营 / 短视频剪辑 / 视觉设计</b></div>
+  </div>
+  <div class="end">方天兵 · 数字媒体艺术设计 · 2027 届 &nbsp;|&nbsp; 作品集 2026</div>
+</footer>
+
+</body>
+</html>
